@@ -1,0 +1,6 @@
+install.packages("vroom")
+install.packages("readxl")
+install.packages("devtools")
+library("vroom")
+ga_data <- vroom(file = "C:/materials/lesson_3/ga_nowember.csv")
+setwd('C:/materials/lesson_3')

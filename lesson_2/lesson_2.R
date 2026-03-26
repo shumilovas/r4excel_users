@@ -9,7 +9,7 @@ typeof(strings)
 vec <- c(3, "string")
 typeof(vec)
 
-# обраение к элементу вектора
+# обращение к элементу вектора
 strings[1]
 strings[2]
 y[3:6]
