@@ -7,11 +7,11 @@ library(dplyr)
 
 # загрузка данных
 ga_data <- vroom("https://raw.githubusercontent.com/selesnow/publications/master/code_example/from_excel_to_r/lesson_3/ga_nowember.csv")
-
+ga_data=data.frame(ga_data)
 # ######################################################
 # фильтраци¤ строк
 ## простейший фильтр с одним условием
-ga_data_organic <- filter(ga_data, medium == "organic")
+ga_data_organic <- filter(ga_data, ga_data$medium == "organic")
 
 ## несколько условий
 ga_data_organic_10 <- filter(ga_data, medium == "organic" & sessions > 10 )

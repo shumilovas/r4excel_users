@@ -29,10 +29,10 @@ ga_full <- vroom(files)
 library(readxl)
 
 ## получить список листов из Excel файла
-excel_sheets("D:/materials/lesson_3/ga_examples.xlsx")
+excel_sheets("C:/materials/lesson_3/ga_examples.xlsx")
 
 ## считать данные с листа
-xl_dec <- read_excel("D:/materials/lesson_3/ga_examples.xlsx", sheet = "dec")
+xl_dec <- read_excel("C:/materials/lesson_3/ga_examples.xlsx", sheet = "dec")
 
 # ###########################################
 # Чтение Google Таблиц
